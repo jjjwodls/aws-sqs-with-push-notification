@@ -1,4 +1,4 @@
-import { DeleteMessageCommandOutput, Message, ReceiveMessageCommandOutput } from '@aws-sdk/client-sqs';
+import { Message } from '@aws-sdk/client-sqs';
 import { SqsClientInterface } from './sqs-client.interface';
 
 export class FakeSqsClient implements SqsClientInterface {

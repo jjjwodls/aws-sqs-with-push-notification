@@ -29,9 +29,6 @@ importers:
       '@nestjs/schedule':
         specifier: ^4.1.0
         version: 4.1.0(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.4.1(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@10.4.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))
-      '@ssut/nestjs-sqs':
-        specifier: ^3.0.0
-        version: 3.0.0(@aws-sdk/client-sqs@3.632.0)(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.4.1(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@10.4.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))
       aws-sdk:
         specifier: ^2.1677.0
         version: 2.1677.0
@@ -449,12 +446,6 @@ packages:
     resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  '@golevelup/nestjs-discovery@4.0.1':
-    resolution: {integrity: sha512-HFXBJayEkYcU/bbxOztozONdWaZR34ZeJ2zRbZIWY8d5K26oPZQTvJ4L0STW3XVRGWtoE0WBpmx2YPNgYvcmJQ==}
-    peerDependencies:
-      '@nestjs/common': ^10.x
-      '@nestjs/core': ^10.x
-
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
     engines: {node: '>=10.10.0'}
@@ -857,14 +848,6 @@ packages:
   '@smithy/util-utf8@3.0.0':
     resolution: {integrity: sha512-rUeT12bxFnplYDe815GXbq/oixEGHfRFFtcTF3YdDi/JaENIM6aSYYLJydG83UNzLXeRI5K8abYd/8Sp/QM0kA==}
     engines: {node: '>=16.0.0'}
-
-  '@ssut/nestjs-sqs@3.0.0':
-    resolution: {integrity: sha512-5Od9/PIyOObECsyjelb+0aFUH+/MlRZyc59FPIjkof9LlrwYjly8w1lFfjiUvzfwxZ6h6iIjo9d45+4v4yKqDg==}
-    engines: {node: '>=18.0.0'}
-    peerDependencies:
-      '@aws-sdk/client-sqs': ^3.600.0
-      '@nestjs/common': ^6.10.11 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0
-      '@nestjs/core': ^6.10.11 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0
 
   '@tsconfig/node10@1.0.11':
     resolution: {integrity: sha512-DcRjDCujK/kCk/cUe8Xz8ZSpm8mS3mNNpta+jGCA6USEDfktlNvm1+IuZ9eTcDbNk41BHwpHHeW+N1lKCz4zOw==}
@@ -2825,18 +2808,6 @@ packages:
   sprintf-js@1.0.3:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
 
-  sqs-consumer@11.0.2:
-    resolution: {integrity: sha512-sb4I5nH9ILZY96xgMbMs1el0UIi4/ZZYiPRVNgJWF6qIN3nO1EprBMOCtHhzYf4nDCNKRMg6gLuub83adO859Q==}
-    engines: {node: '>=18.0.0'}
-    peerDependencies:
-      '@aws-sdk/client-sqs': ^3.632.0
-
-  sqs-producer@5.0.0:
-    resolution: {integrity: sha512-xP1Vo/frpv5d20I0sC1sIUhnABFEPoHUE58ppstmjNE7HDzB33cuUdMOaZEOTtDMMje09xIcqf4ch0dFY83/cA==}
-    engines: {node: '>=18.0.0'}
-    peerDependencies:
-      '@aws-sdk/client-sqs': ^3.529.1
-
   stack-utils@2.0.6:
     resolution: {integrity: sha512-XlkWvfIm6RmsWtNJx+uqtKLS8eqFbxUg0ZzLXqY0caEy9l7hruX8IpiDnjsLavoBgqCCR71TqWO8MaXYheJ3RQ==}
     engines: {node: '>=10'}
@@ -3903,12 +3874,6 @@ snapshots:
 
   '@eslint/js@8.57.0': {}
 
-  '@golevelup/nestjs-discovery@4.0.1(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.4.1(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@10.4.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))':
-    dependencies:
-      '@nestjs/common': 10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1)
-      '@nestjs/core': 10.4.1(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@10.4.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
-      lodash: 4.17.21
-
   '@humanwhocodes/config-array@0.11.14':
     dependencies:
       '@humanwhocodes/object-schema': 2.0.3
@@ -4549,17 +4514,6 @@ snapshots:
     dependencies:
       '@smithy/util-buffer-from': 3.0.0
       tslib: 2.6.3
-
-  '@ssut/nestjs-sqs@3.0.0(@aws-sdk/client-sqs@3.632.0)(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.4.1(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@10.4.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))':
-    dependencies:
-      '@aws-sdk/client-sqs': 3.632.0
-      '@golevelup/nestjs-discovery': 4.0.1(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.4.1(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@10.4.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))
-      '@nestjs/common': 10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1)
-      '@nestjs/core': 10.4.1(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@10.4.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
-      sqs-consumer: 11.0.2(@aws-sdk/client-sqs@3.632.0)
-      sqs-producer: 5.0.0(@aws-sdk/client-sqs@3.632.0)
-    transitivePeerDependencies:
-      - supports-color
 
   '@tsconfig/node10@1.0.11': {}
 
@@ -6798,17 +6752,6 @@ snapshots:
   source-map@0.7.4: {}
 
   sprintf-js@1.0.3: {}
-
-  sqs-consumer@11.0.2(@aws-sdk/client-sqs@3.632.0):
-    dependencies:
-      '@aws-sdk/client-sqs': 3.632.0
-      debug: 4.3.6
-    transitivePeerDependencies:
-      - supports-color
-
-  sqs-producer@5.0.0(@aws-sdk/client-sqs@3.632.0):
-    dependencies:
-      '@aws-sdk/client-sqs': 3.632.0
 
   stack-utils@2.0.6:
     dependencies:

@@ -1,4 +1,4 @@
-import { BadRequestException, Inject, Injectable } from '@nestjs/common';
+import { Inject, Injectable } from '@nestjs/common';
 import Expo, { ExpoPushMessage } from 'expo-server-sdk';
 import { NotExpoTokenException } from 'src/expo/not-expo-token-exception';
 import { EXPO_SDK } from 'src/provide';

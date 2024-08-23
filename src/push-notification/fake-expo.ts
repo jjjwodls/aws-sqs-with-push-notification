@@ -1,4 +1,3 @@
-import { BadRequestException } from '@nestjs/common';
 import Expo, { ExpoPushMessage, ExpoPushTicket } from 'expo-server-sdk';
 
 export class FakeExpo extends Expo {

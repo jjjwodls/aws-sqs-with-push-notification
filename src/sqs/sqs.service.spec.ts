@@ -1,7 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { SQS_CLIENT } from 'src/provide';
 import { FakeExpo } from 'src/push-notification/fake-expo';
-import { PushNotificationModule } from 'src/push-notification/push-notification.module';
 import { PushNotificationService } from 'src/push-notification/push-notification.service';
 import { FakeSqsClient } from './fake-sqs-client';
 import { InvalidMessageBodyException } from './invalid-message-body-exception';
